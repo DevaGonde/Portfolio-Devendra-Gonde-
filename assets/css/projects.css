@@ -130,6 +130,10 @@ body {
       font-size: 50px;
       margin-left: 50px;
     }
+    .card{
+          height:350px;
+            margin-left:10%;
+      }
   }
   
   @media screen and (max-width: 480px) {
@@ -139,8 +143,6 @@ body {
     }
       .card{
           height:350px;
-      }
-      .card{
-          margin-left:10%;
+            margin-left:10%;
       }
   }
