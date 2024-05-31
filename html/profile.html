@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/profile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Foldit&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Headland+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <img id="img" src="../assets/img/logo final.png" alt="">
+        <div class="bg-img"></div>
+        <div class="text">
+            <h1 id="name" class="max-heading">Devendra Gonde</h1>
+            <h3><span id="changing-text"></span><span id="cursor">|</span></h3>
+            <p>
+                I am a proficient Java full stack developer with extensive expertise in JavaBeans, JPA, JSP, Servlets, HTML,
+                CSS, JavaScript, MySQL, and Tomcat. My commitment lies in developing robust backend systems and maintaining
+                highly efficient databases. With strong technical skills, I excel in building dynamic web applications and
+                ensuring seamless integration between frontend and backend components.
+            </p>
+        </div>
+    </div>
+    <script>
+        const texts = [
+            "I Am The Mentor",
+            "I Am The Coder",
+            "I Am The Front End Developer",
+            "I Am The Back End Developer",
+            "I Am The Full Stack Developer",
+        ];
+
+        let textIndex = 0;
+        let charIndex = 0;
+        const changingTextElement = document.getElementById('changing-text');
+        const cursorElement = document.getElementById('cursor');
+
+        function typeText() {
+            if (charIndex < texts[textIndex].length) {
+                changingTextElement.textContent += texts[textIndex].charAt(charIndex);
+                charIndex++;
+                setTimeout(typeText, 100);
+            } else {
+                setTimeout(eraseText, 2000);
+            }
+        }
+
+        function eraseText() {
+            if (charIndex > 0) {
+                changingTextElement.textContent = texts[textIndex].substring(0, charIndex - 1);
+                charIndex--;
+                setTimeout(eraseText, 50);
+            } else {
+                textIndex = (textIndex + 1) % texts.length;
+                setTimeout(typeText, 500);
+            }
+        }
+
+        setTimeout(typeText, 1000); // Initial delay before typing starts
+    </script>
+</body>
+
+</html>

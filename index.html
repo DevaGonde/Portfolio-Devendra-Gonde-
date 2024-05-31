@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Devendra Gonde | Portfolio</title>
+    <!-- <link rel="stylesheet" type="text/css" href="./assets/css/temp.css" /> -->
+    <link rel="stylesheet" href="./assets/css/nav.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <style>
+        iframe {
+            width: 100%;
+            border: none;
+            display: block; /* Ensures the iframe behaves like a block element */
+        }
+        #navbar{
+            position:fixed;
+            background: fixed;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 5px 0;
+            position: static;
+            bottom: 0;
+            width: 100%;
+        }
+        .footer a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="./assets/img/logo final.png" alt="logo" />
+            <h1>DG</h1>
+        </div>
+        <ul>
+            <li class="list-item"><a href="#profile"><span class="svg-span profile-icon"></span><span
+                        style="top:0">Profile</span></a></li>
+            <li class="list-item"><a href="#skillset"><span class="svg-span skillset-icon"></span><span
+                        style="top:0">SkillSet</span></a></li>
+            <li class="list-item"><a href="#java"><span class="svg-span java-icon"></span><span
+                        style="top:0">Java</span></a></li>
+            <li class="list-item"><a href="#services"><span class="svg-span  services-icon"></span><span
+                        style="top:0">Services</span></a></li>
+            <li class="list-item"><a href="#projects"><span class="svg-span  projects-icon"></span><span
+                        style="top:0">Projects</span></a></li>
+            <li class="list-item"><a href="#certificate"><span class="svg-span cert-icon"></span><span
+                        style="top:0">Certificates</span></a></li>
+            <li id="last-list-item" class="list-item"><a href="#contact"><span
+                        class="svg-span contact-icon"></span><span style="top:0">Contact</span></a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+    </nav>
+    <div class="menubar">
+        <ul>
+            <li class="list-item"><a href="#profile"><span class="svg-span profile-icon"></span><span style="top:0">Profile</span></a></li>
+            <li class="list-item"><a href="#skillset"><span class="svg-span skillset-icon"></span><span style="top:0">SkillSet</span></a></li>
+            <li class="list-item"><a href="#java"><span class="svg-span java-icon"></span><span style="top:0">Java</span></a></li>
+            <li class="list-item"><a href="#services"><span class="svg-span  services-icon"></span><span style="top:0">Services</span></a></li>
+            <li class="list-item"><a href="#projects"><span class="svg-span  projects-icon"></span><span style="top:0">Projects</span></a></li>
+            <li class="list-item"><a href="#certificate"><span class="svg-span cert-icon"></span><span style="top:0">Certificates</span></a></li>
+            <li id="last-list-item" class="list-item"><a href="#contact"><span class="svg-span contact-icon"></span><span style="top:0">Contact</span></a></li>
+        </ul>
+    </div>
+    
+    <br><br>
+    <iframe id="profile" src="./html/profile.html"></iframe>
+    <hr>
+    <iframe id="skillset" scrolling="no"  style="height: 100%; width:100%; margin-left: -36px; margin-top: -486; overflow: hidden;" src="./html/skillset.html"></iframe>
+    <hr>
+    <iframe id="java" scrolling="no"  style=" width:100%; margin-left: -36px; margin-top: -486; overflow: hidden;" src="./html/java.html"></iframe>
+    <hr>
+    <iframe id="services"    scrolling="no" src="./html/services.html"></iframe>
+    <hr>
+    <iframe id="projects"    scrolling="no" src="./html/projects.html"></iframe><hr>
+    <iframe id="certificate"    scrolling="no" src="./html/certificates.html"></iframe> <iframe id="contact"    scrolling="no" src="./html/contact.html"></iframe>
+    <footer class="footer">
+        <p>All rights reserved &copy; <span id="year"></span> | Portfolio Developed by <a href="mailto:devendragonde1221@gmail.com">Devendra Gonde</a></p>
+    </footer>
+    
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
