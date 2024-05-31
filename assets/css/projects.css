@@ -130,8 +130,14 @@ body {
       font-size: 50px;
       margin-left: 50px;
     }
-    .card{
-        margin-left: 10%;
+   .card{
+        width:300px;
+        height:350px;
+        margin-left: 0;
+        display:flex;
+        justify-content:center;
+        flex-direction:column;
+        padding:0;
     }
   }
   
@@ -141,6 +147,8 @@ body {
       margin-left: 30px;
     }
     .card{
+        width:300px;
+        height:350px;
         margin-left: 0;
         display:flex;
         justify-content:center;
